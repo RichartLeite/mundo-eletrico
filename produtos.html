@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - Mundo Elétrico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="logo-mundo-eletrico.png" alt="Mundo Elétrico" class="logo">
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="produtos">
+  <h2>Produtos</h2>
+  <div class="grid-produtos">
+    <div class="produto">
+      <img src="produtos/lampada-led.png" alt="Lâmpada LED">
+      <h3>Lâmpada LED</h3>
+      <span>R$ 10,90</span>
+      <button>Adicionar</button>
+    </div>
+    <div class="produto">
+      <img src="produtos/disjuntor.png" alt="Disjuntor">
+      <h3>Disjuntor</h3>
+      <span>R$ 20,90</span>
+      <button>Adicionar</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mundo Elétrico - Todos os direitos reservados</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+</body>
+</html>
